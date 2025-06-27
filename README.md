@@ -41,24 +41,22 @@ To understand the distribution of water sources throughout Maji Ndogo, I analyze
 columns within the location table.
 Looking at the data, it's quite clear that most of Maji Ndogo's water sources, at least according to our survey, are found spread out among the smaller, rural communities. What's also reassuring is that when we tally up the sources by province, they all seem to have a fairly similar number. This tells us our survey really does a good job of representing every province across Maji Ndogo.
 
-<b> Records per town</b>                                                      
+Joining the provinces to towns in a single output
 
-| town_name | record_per_town |
-| :-------- | :-------------- |
-| Rural     | 23740           |
-| Harare    | 1650            |
-| Amina     | 1090            |
-| Lusaka    | 1070            |
-| Mrembo    | 990             |
+| provincename | town_name | records per town |
+| :----------- | :-------- | :---------- |
+| Akatsi       | Harare    | 800         |
+| Akatsi       | Kintampo  | 780         |
+| Akatsi       | Lusaka    | 1070        |
+| Akatsi       | Rural     | 6290        |
+| Amanzi       | Abidjan   | 400         |
 
 
- <b> Records per province </b>
+### 6. looking at the number of records for each location type
+from the table below we can see that there are more rural sources than urban.
+Used a subquery to calculate the percentage of each source to the total 
 
-| province_name | record_per_province |
-| :------------ | :------------------ |
-| Kilimani      | 9510                |
-| Akatsi        | 8940                |
-| Sokoto        | 8220                |
-| Amanzi        | 6950                |
-| Hawassa       | 6030                |
-
+| location type | num of sources | Percentage_total |
+| :------------ | :------------- | :--------- |
+| Rural         | 23740          | 60%        |
+| Urban         | 15910          | 40%        |
