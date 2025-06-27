@@ -30,6 +30,12 @@ I successfully achieved this by utilizing both Common Table Expressions (CTEs) a
 I also leveraged a CTE specifically to retrieve the names and email addresses of the top employees based on their highest visit count. 
 Through these exercises, I've gained a clear understanding of the power and versatility of CTEs in structuring and solving complex SQL queries.
 
+| assigned_employee_id | employee_name | email                   | phone_number  | num_of_visits |
+| :------------------- | :------------ | :---------------------- | :------------ | :------------ |
+| 1                    | Bello Azibo   | bello.azibo@ndogowater.gov | +996438647863 | 3708      |
+| 2                    | Pili Zola     | pili.zola@ndogowater.gov | +998224789333 | 3676         |
+| 3                    | Rudo Imani    | rudo.imani@ndogowater.gov | +990469726483 | 3539         |
+
 ### 5. Analyzing locations
 To understand the distribution of water sources throughout Maji Ndogo, I analyzed the `province_name`, `town_name`, and `location_type` 
 columns within the location table.
