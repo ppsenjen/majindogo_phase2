@@ -60,3 +60,43 @@ Used a subquery to calculate the percentage of each source to the total
 | :------------ | :------------- | :--------- |
 | Rural         | 23740          | 60%        |
 | Urban         | 15910          | 40%        |
+
+
+### 7. Diving into water sources
+<b>How many wells, taps and rivers are there?</b>
+| water sources     | number of water sources |
+|-------------------|-------|
+| well              | 17383 |
+| tap_in_home       | 7265  |
+| tap_in_home_broken| 5856  |
+| shared_tap        | 5767  |
+| river             | 3379  |
+
+<b>How many people share particular types of water sources on average?</b>
+| water sources  | Avg people per source |
+|-------------------|-------|
+| shared_tap        | 2071  |
+| tap_in_home       | 644   |
+| tap_in_home_broken| 649   |
+| river             | 699   |
+| well              | 279   |
+
+From the result we should focus on improving shared taps first.
+
+N/B - On average, about 6 people live together in one home and share a single tap within that household.
+So, if the data shows, for example, 644 "tap_in_home" records, it doesn't mean just 644 taps. Because each record represents a tap shared by roughly 6 people, it actually translates to about 100 actual, individual taps (644 divided by 6). The same logic applies to "tap_in_home_broken" records.
+In essence, the data gives a broad household count, but the real number of individual taps is much higher due to shared usage within homes.
+
+<b>The total number of people served by each type of water source in total</b>
+| Water Source        | Percentage (%) people  |
+|---------------------|----------------|
+| shared_tap          | 44          |
+| tap_in_home         | 17          |
+| tap_in_home_broken  | 14          |
+| river               | 9           |
+| well                | 18         |
+
+By adding tap_in_home and tap_in_home_broken together, we see that 31% of people have water infrastructure installed in their homes, but 45%
+(14/31) of these taps are not working! This isn't the tap itself that is broken, but rather the infrastructure like treatment plants, reservoirs, pipes, and
+pumps that serve these homes that are broken.
+
