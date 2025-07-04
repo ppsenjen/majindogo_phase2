@@ -1,4 +1,3 @@
-
 # Solving  majindogo's water crisis using MySQL (phase_two)
 In this phase I'll start by getting a look at the database tables again to get the feel.
 ## Cleaning the Employee Table.
